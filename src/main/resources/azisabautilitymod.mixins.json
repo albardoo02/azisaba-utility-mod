@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "net.azisaba.azisabautilitymod.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"MixinItemStack"
+	],
+	"client": [
+		"MixinClientCommonNetworkHandlerAccessor",
+		"MixinClientConnectionAccessor",
+		"MixinClientConnection",
+		"MixinPlayerListHud",
+		"MixinDebugHud"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
