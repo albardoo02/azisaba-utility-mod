@@ -81,19 +81,23 @@ public class UpdateTimePacketHandler extends ChannelInboundHandlerAdapter {
         return times.stream().mapToLong(l -> l).average().orElse(0.0);
     }
 
-    private enum Admins {
-        Life('L'),
-        LGW('G'),
-        TSL('T'),
-        Vanilife('V'),
-        Lobby('O'),
-        Afnw2('W'),
-        JG('J'),
-        ;
+    public enum Admins {
+        Life("L"),
+        LGW("G"),
+        LGW2("G2"),
+        Sclat("S"),
+        Despawn("E"),
+        Diverse("D"),
+        TSL("T"),
+        Vanilife("V"),
+        Lobby("O"),
+        Afnw2("W"),
+        JG("J"),
+        AFK("A");
 
-        public final char chr;
+        public final String chr;
 
-        Admins(char chr) {
+        Admins(String chr) {
             this.chr = chr;
         }
     }

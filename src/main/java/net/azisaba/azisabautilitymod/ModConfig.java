@@ -71,6 +71,5 @@ public class ModConfig {
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
-        saveConfig();
     }
 }
