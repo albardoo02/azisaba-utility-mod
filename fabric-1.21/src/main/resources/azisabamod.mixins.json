@@ -8,8 +8,11 @@
 		"MixinClientCommonNetworkHandlerAccessor",
 		"MixinClientConnection",
 		"MixinClientConnectionAccessor",
+		"MixinConnectScreen",
 		"MixinItemStack",
-		"MixinPlayerListHud"
+		"MixinPlayerListHud",
+		"MixinServerAddress",
+		"MixinServerStatusPinger"
 	],
 	"injectors": {
 		"defaultRequire": 1
