@@ -2,8 +2,8 @@ package net.azisaba.azisabamod.fabric.debug;
 
 import io.netty.channel.Channel;
 import net.azisaba.azisabamod.fabric.connection.UpdateTimePacketHandler;
-import net.azisaba.azisabamod.fabric.mixin.MixinClientCommonNetworkHandlerAccessor;
-import net.azisaba.azisabamod.fabric.mixin.MixinClientConnectionAccessor;
+import net.azisaba.azisabamod.fabric.mixin.network.MixinClientCommonNetworkHandlerAccessor;
+import net.azisaba.azisabamod.fabric.mixin.network.MixinClientConnectionAccessor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.debug.DebugEntryCategory;
 import net.minecraft.client.gui.components.debug.DebugScreenDisplayer;

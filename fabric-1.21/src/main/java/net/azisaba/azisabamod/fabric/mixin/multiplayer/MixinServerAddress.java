@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.multiplayer;
 
 import net.azisaba.azisabamod.fabric.connection.ws.WebSocketAddressUtil;
 import net.minecraft.client.multiplayer.resolver.ServerAddress;

@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.gui.screens;
 
 import net.azisaba.azisabamod.fabric.Mod;
 import net.azisaba.azisabamod.fabric.connection.ws.LocalWebSocketProxyServer;

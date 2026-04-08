@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.network;
 
 import net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl;
 import net.minecraft.network.Connection;

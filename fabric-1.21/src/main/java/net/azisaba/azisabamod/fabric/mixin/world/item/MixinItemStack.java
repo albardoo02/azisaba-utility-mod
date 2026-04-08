@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.world.item;
 
 import net.azisaba.azisabamod.fabric.connection.UpdateTimePacketHandler;
 import net.azisaba.azisabamod.fabric.debug.AzisabaDebugScreenEntries;

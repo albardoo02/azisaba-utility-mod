@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.network;
 
 import io.netty.channel.ChannelPipeline;
 import net.azisaba.azisabamod.fabric.connection.UpdateTimePacketHandler;

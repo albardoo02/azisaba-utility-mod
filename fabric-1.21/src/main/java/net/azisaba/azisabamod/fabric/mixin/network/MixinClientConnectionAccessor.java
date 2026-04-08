@@ -1,4 +1,4 @@
-package net.azisaba.azisabamod.fabric.mixin;
+package net.azisaba.azisabamod.fabric.mixin.network;
 
 import io.netty.channel.Channel;
 import net.minecraft.network.Connection;
