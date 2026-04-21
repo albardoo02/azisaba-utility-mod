@@ -31,6 +31,7 @@ public class Azisabautilitymod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing Azisaba Utility Mod for 1.15.2...");
+		BuildToolPreviewNetworking.init();
 
 		HudRenderCallback.EVENT.register((tickDelta) -> {
 			MinecraftClient client = MinecraftClient.getInstance();
@@ -49,9 +50,13 @@ public class Azisabautilitymod implements ModInitializer {
 					coordFormat.format(z));
 
 			String displayString = String.format(Locale.ROOT, "座標: %s",  coords);
+			String previewString = PlacementPreviewRenderer.getHudText(client);
 
 			TextRenderer textRenderer = client.textRenderer;
 			int textWidth = textRenderer.getStringWidth(displayString);
+			if (previewString != null) {
+				textWidth = Math.max(textWidth, textRenderer.getStringWidth(previewString));
+			}
 			int textHeight = textRenderer.fontHeight;
 
 			int paddingLeft = 2;
@@ -65,7 +70,8 @@ public class Azisabautilitymod implements ModInitializer {
 			int rectX1 = 0;
 			int rectY1 = 0;
 			int rectX2 = rectX1 + textWidth + paddingLeft + paddingRight;
-			int rectY2 = rectY1 + textHeight + paddingTop + paddingBottom;
+			int lineCount = previewString == null ? 1 : 2;
+			int rectY2 = rectY1 + (textHeight * lineCount) + paddingTop + paddingBottom;
 
 			DrawableHelper.fill(rectX1, rectY1, rectX2, rectY2, bgColor);
 			RenderSystem.enableTexture();
@@ -74,6 +80,9 @@ public class Azisabautilitymod implements ModInitializer {
 			float textDrawY = (float)(0);
 
 			client.textRenderer.drawWithShadow(displayString, textDrawX, textDrawY, textColor);
+			if (previewString != null) {
+				client.textRenderer.drawWithShadow(previewString, textDrawX, textDrawY + textHeight, textColor);
+			}
 		});
 	}
 

@@ -20,6 +20,7 @@ public class ModConfig {
     private static final Path CONFIG_FILE = Paths.get("config", "azisabautilitymod.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private String apiKey = "";
+    private boolean blockPlacementPreview = true;
 
     private static ModConfig instance;
 
@@ -42,6 +43,7 @@ public class ModConfig {
             ModConfig loadedConfig = GSON.fromJson(reader, ModConfig.class);
             if (loadedConfig != null) {
                 this.apiKey = loadedConfig.apiKey;
+                this.blockPlacementPreview = loadedConfig.blockPlacementPreview;
                 LOGGER.info("Config loaded successfully.");
             } else {
                 LOGGER.warn("Config file is empty or invalid, creating default.");
@@ -71,5 +73,13 @@ public class ModConfig {
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
+    }
+
+    public boolean blockPlacementPreview() {
+        return blockPlacementPreview;
+    }
+
+    public void setBlockPlacementPreview(boolean blockPlacementPreview) {
+        this.blockPlacementPreview = blockPlacementPreview;
     }
 }

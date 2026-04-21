@@ -11,7 +11,8 @@
 		"MixinClientConnection",
 		"MixinPlayerListHud",
 		"MixinDebugHud",
-		"MixinMinecraftClientAccessor"
+		"MixinMinecraftClientAccessor",
+		"MixinWorldRenderer"
 	],
 	"injectors": {
 		"defaultRequire": 1
