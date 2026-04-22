@@ -3,5 +3,8 @@
   "text.config.azisabamod-config.option.blockPlacementPreview": "Build-Tool Block Preview",
   "text.config.azisabamod-config.option.blockPlacementPreview.tooltip": "Shows the block shape at the position where placement would occur.",
   "text.config.azisabamod-config.option.apiKey": "API Key",
-  "text.config.azisabamod-config.option.apiKey.tooltip": "the api key that you can obtain via /apikey"
+  "text.config.azisabamod-config.option.apiKey.tooltip": "the api key that you can obtain via /apikey",
+  "text.azisabamod.preview.template.ready": "Template placement preview ready",
+  "text.azisabamod.preview.template.name": "Name: %s",
+  "text.azisabamod.preview.template.size": "Size: %dx%dx%d (%d blocks)"
 }

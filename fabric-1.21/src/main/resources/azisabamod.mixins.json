@@ -4,7 +4,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
-    "gui.MixinGuiGraphics",
+    "gui.MixinGui",
     "gui.components.MixinChatComponent",
     "gui.components.MixinPlayerListHud",
     "gui.screens.MixinAbstractContainerScreen",

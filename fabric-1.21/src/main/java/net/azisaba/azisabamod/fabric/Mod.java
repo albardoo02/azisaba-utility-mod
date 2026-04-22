@@ -2,6 +2,8 @@ package net.azisaba.azisabamod.fabric;
 
 import com.google.gson.Gson;
 import net.azisaba.azisabamod.fabric.debug.AzisabaDebugScreenEntries;
+import net.azisaba.azisabamod.fabric.preview.BuildToolPlusPreviewRenderer;
+import net.azisaba.azisabamod.fabric.preview.BuildToolPlusPreviewSync;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import org.jetbrains.annotations.NotNull;
@@ -26,6 +28,8 @@ public class Mod implements ModInitializer {
         });
         new AzisabaDebugScreenEntries();
         new PlacementPreviewRenderer();
+        new BuildToolPlusPreviewSync();
+        new BuildToolPlusPreviewRenderer();
     }
 
     public static String makeRequest(String path) throws IOException, URISyntaxException {
